@@ -1,0 +1,20 @@
+{
+ "id":"L02", "title":"Keep it. Find it. Reopen it.", "minutes":"10–20 min",
+ "assignment":"Take one piece of your existing work and prove you can leave it, return to it, and keep an experiment separate from the original.",
+ "why":"A sound is only reusable when you can find and reopen it. This exercise turns saving from a hopeful button press into something you can demonstrate.",
+ "setup":"Begin after the current setup audit, with a project you recognize. Establish a verified save route before making edits. Do not rename files in the browser, delete duplicate candidates, format media, or close unsaved work. Use a clearly named working copy, not your only original.",
+ "steps":[
+  {"title":"Recognize the original","text":"Listen to a short familiar part. Note the project name and two identifying features—for example a particular sound and one event or phrase. These become your return test."},
+  {"title":"Preserve before exploring","text":"Use the project's Save As operation to save a distinct practice copy in a known writable location. Confirm the actual name and storage device on the save screen. If Save As or the location is unclear, stop and verify the screen instead of guessing."},
+  {"title":"Make a reversible fingerprint","text":"Only in the saved practice copy, reduce one track's level by a small audible amount. Write down the original value. Save the practice copy again. Do not alter the sample file itself."},
+  {"title":"Return and compare","text":"Once saving is confirmed, reopen the original and listen for its identifying features. Then reopen the practice copy. Does only the copy have the quieter part? A load error or missing sound is a result to investigate, not proof that the original was lost."},
+  {"title":"Use what you kept","text":"Return to the practice copy and play with it. At your next session, try finding that copy without these instructions. Decide whether the naming and location actually helped."}
+ ],
+ "listenFor":["Do the expected sounds and recorded parts return?","Is the original distinct from the practice copy?","Can you locate the copy without opening several guesses?"],
+ "concept":"The project file and its associated sound/data files are not interchangeable. Moving or renaming one without the other can break loading. A second copy on the same storage device is useful for experiments but is not an independent backup.",
+ "hints":["Identify the project-saving menu and its Save As choice on your installed MPC version before editing. Record that exact route and actual location in your journal; this brief does not invent a universal shortcut.","A suggested new name is 'Practice — <existing project name>'. This is a proposed name, not a claim that such a file already exists. Preserve the original and its associated data."],
+ "check":["I have identified the actual original and practice-copy names and locations.","Both reopen with their expected material.","I can explain what is a working copy and what still needs an independent backup."],
+ "recovery":"If there is any uncertainty about saving, do not close the current project or overwrite the original. Record the message and storage location. Never solve a missing-file error by deleting unexplained folders.",
+ "keep":"The exact original/copy paths, the two identifying features, and the actual reopen result. Unknown fields stay unknown. Do not upload the music just to prove that it exists.",
+ "next":"L03", "sources":["projectFiles"]
+}

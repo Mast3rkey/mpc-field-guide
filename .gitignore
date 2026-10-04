@@ -1,0 +1,9 @@
+# Local test results and credentials; not musical source assets
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+node_modules/
+test-results/
+playwright-report/

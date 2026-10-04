@@ -1,0 +1,26 @@
+{
+ "note":"A starting inventory from my conversations and journal—not a scan of my MPC, SD card, phone, or computer. Names below are journal labels until actual filenames are verified.",
+ "setup":[
+  {"name":"MPC identity","value":"MPC Key 37 G2 as reported; installed OS version not yet recorded."},
+  {"name":"USB Type-C Data Role","value":"Act as Device was observed. Stable end-to-end operation and persistence have not been proven."},
+  {"name":"USB Type-C Power Role","value":"Charge connected device is the intended value. A switch to the non-charging option and disconnections were reported; cause and sequence remain unknown."},
+  {"name":"AUM input/output snapshot","value":"Input: MIC: Front • Cardioid. Output: Speaker—not the target USB route. Earlier screen: 48 kHz, buffer 256, gain 100%, High Quality OFF. These are observations, not recommended final values."}
+ ],
+ "items":[
+  {"id":"A01","title":"So What sample & keygroup work","status":"Reported · locate and reopen","note":"Sampling, chopping, and pitched playback were discussed. The original audio and playable instrument need separate identification.","next":"Find the saved original and derivative without overwriting either. Use them for future sampling assignments."},
+  {"id":"A02","title":"Chopped-sample beat & pad layout","status":"Work in progress · location unknown","note":"A beat from slices, additional layering, and pad reorganization were discussed. Its relationship to A01 is not established.","next":"Identify the actual project and slice source; preserve its present layout before a new experiment."},
+  {"id":"A03","title":"Privia Rhodes / MPC bass","status":"Preferred roles · routing unresolved","note":"The intended roles are Rhodes on Privia and Fat Fingers bass on MPC. The actual Rhodes source and saved template are not verified. Unwanted bass triggering from Casio was reported.","next":"Identify both sound sources and separate their control paths before naming a working template."},
+  {"id":"A04","title":"RD-8 integration","status":"Partial results · repeat test needed","note":"Audio and MIDI connections and some clock success were reported, followed by triggering/transport problems. A saved sampled RD-8 kit is not established.","next":"Test clock, note triggering, audio monitoring, and recorded playback separately."},
+  {"id":"A05","title":"iPhone / AUM live microphone","status":"Setup inspected · recording unproven","note":"Settings have been inspected. A stable simultaneous phone-mic input and MPC USB output, and a saved AUM session, remain to be demonstrated.","next":"Finish the settings audit, then make a controlled end-to-end capture test."},
+  {"id":"A06","title":"Multi-instrument recording attempt","status":"Partial capture reported","note":"Keyboard was audible on playback; drum machine and guitar were not heard. WAV files were reportedly visible. The contents and exact filenames remain unverified.","next":"Inspect the existing recording before repeating it or assuming the other sources are lost."},
+  {"id":"A07","title":"Expansions, downloads & storage","status":"Inventory to enumerate","note":"Expansion transfers and SD formatting were reported. Owned, downloaded, transferred, activated, and successfully loaded are different states.","next":"List internal storage, SD, computer downloads, phone sessions, and backups separately. No deletion during inventory."},
+  {"id":"A08","title":"Multiple project copies","status":"Master copy not identified","note":"Several project versions were reported. Their names and the intended working copy are not established.","next":"List, open, and compare using recognizable musical features. Keep duplicate candidates until their contents are understood."}
+ ],
+ "experiments":[
+  {"id":"E01","title":"What makes USB disconnect?","status":"Unresolved","note":"The power-role display and phone connection change. This is a symptom, not yet a diagnosis.","next":"After the audit, record both screens and vary one factor per attempt."},
+  {"id":"E02","title":"Does the phone microphone reach the recorder?","status":"Not yet proven","note":"AUM's earlier output said Speaker. Input activity is not a successful USB capture test.","next":"Verify the whole route and replay the recorded result with live sources silenced."},
+  {"id":"E03","title":"Can the RD-8 stay playable and controlled?","status":"Partial","note":"Synchronization, note triggering, and audio capture must be separated rather than called one working connection.","next":"Establish one repeatable route, then add the next capability."},
+  {"id":"E04","title":"Why does the other keyboard sound?","status":"Unresolved","note":"The desired Rhodes/bass separation was not yet demonstrated in the reported setup.","next":"Identify each controller input and sound source before changing channels."},
+  {"id":"E05","title":"What did the band take actually retain?","status":"Needs inspection","note":"The earlier recording needs an audition and file check, not another assumed diagnosis.","next":"Locate the existing take and identify events, audio regions, and active live inputs."}
+ ]
+}

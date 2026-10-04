@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "owner": "Mast3rkey",
+  "repository": "Mast3rkey/mpc-field-guide",
+  "currentLesson": "L01",
+  "currentFocus": "Finish the page-by-page Preferences audit. Audio Device is next; the installed OS version and stable phone route still need verification.",
+  "purpose": "My personal MPC studies, practice, creations, and discoveries. Other people may read the notebook, but my musical goals and development determine its direction.",
+  "method": [
+    "Start with something to hear or do, not a menu to memorize. Each assignment develops one useful skill through a small musical experiment.",
+    "Predict, act, listen, explain, vary, and keep the result. Try independently first; open the control hints when needed. A surprising result is information, not a failed lesson.",
+    "Use my own material and musical choices. No assigned genre, chord progression, or compositional formula. Compare a result before deciding what I prefer.",
+    "Teach useful prerequisites proactively: preserving work before risky editing, selection scope before sound design, routing before adding devices. Credit existing ability with a brief demonstration.",
+    "Practice correctness, then recovery, then fewer unnecessary actions. Revisit a skill in a later session and with different material. The suggested times are flexible practice blocks, not mastery deadlines.",
+    "Record the sound or practical result, one observation, and one next experiment. Separate New, Practiced, Reliable, and Ready to perform; a checkbox or one guided attempt does not establish mastery."
+  ],
+  "lessons": [
+    {"id":"L01","title":"Know what is playing","summary":"Follow one sound from your hands to your ears. Discover what a meter does—and does not—prove.","minutes":"10–15 min","state":"ready","file":"content/lessons/L01.json","prerequisites":[],"tags":"audio MIDI signal routing monitoring recording"},
+    {"id":"L02","title":"Keep it. Find it. Reopen it.","summary":"Build a safe working copy of something you already made, then prove that it returns.","minutes":"10–20 min","state":"ready","file":"content/lessons/L02.json","prerequisites":["L01"],"tags":"save backup storage SD projects"},
+    {"id":"L03","title":"Change one thing, on purpose","summary":"Make one part quieter without changing its neighbor. Learn selection and control scope by listening.","minutes":"10–15 min","state":"ready","file":"content/lessons/L03.json","prerequisites":["L02"],"tags":"navigation selection mixer levels pad track undo"},
+    {"id":"L04","title":"Catch a phrase, then build on it","summary":"Record, overdub, and correct one event without losing the first idea.","state":"planned","prerequisites":["L02","L03"],"tags":"record overdub notes erase"},
+    {"id":"L05","title":"A recording becomes an instrument","summary":"Capture, trim, assign, and play one sound chosen by you.","state":"planned","prerequisites":["L01","L02","L03"],"tags":"sampler trim assign sample"},
+    {"id":"L06","title":"One chop, two endings","summary":"Make the same source work as a short gesture and a sustained phrase. Compare release and overlap.","state":"planned","prerequisites":["L05"],"tags":"slices articulation sustain one shot note on choke"},
+    {"id":"L07","title":"Make touch change the sound","summary":"Build a reusable pitched instrument and explore expression and layers.","state":"planned","prerequisites":["L05","L06"],"tags":"keygroup velocity expression tuning"},
+    {"id":"L08","title":"Give each part its own space","summary":"Balance layers and explore inserts, sends, and the order of processing.","state":"planned","prerequisites":["L03","L04"],"tags":"effects mix sends inserts bus"},
+    {"id":"L09","title":"Keep the performance, not only the notes","summary":"Test what is captured when you move a control, mute a part, or play a live source.","state":"planned","prerequisites":["L04","L08"],"tags":"automation Q-Link mute solo recording audio"},
+    {"id":"L10","title":"Cross the boundary","summary":"Try contrasting sections, odd meters, tempo switches, pickups, and sustained notes.","state":"planned","prerequisites":["L04"],"tags":"sequence song arrange time tempo meter pickup"},
+    {"id":"L11","title":"Two instruments, clear intentions","summary":"Separate notes, clock, transport, and sound with the Privia, RD-8, and phone.","state":"planned","prerequisites":["L01","L03","L09"],"tags":"MIDI RD-8 Privia USB clock external"},
+    {"id":"L12","title":"A rig that lets the idea continue","summary":"Combine favorite sounds, templates, exports, backups, and recovery into a dependable personal setup.","state":"planned","prerequisites":["L02","L09","L11"],"tags":"performance template library mobile workflow"}
+  ],
+  "engineering": ["Sound, voltage, and analog/digital conversion", "Sample rate, bit depth, and sampling/reconstruction", "Buffers, latency, clocks, and scheduling", "Playback rate, pitch, time, and resampling", "Envelopes, filters, modulation, and effects", "Voice allocation, CPU, RAM, storage, files, and USB"],
+  "coverageNote": "Three assignment briefs are available. Later lessons and engineering modules are planned, not completed. Personal skill fluency has not yet been assessed. Exact button paths are verified against the installed OS as we work."
+}

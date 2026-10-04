@@ -1,0 +1,20 @@
+{
+ "id":"L01", "title":"Know what is playing", "minutes":"10–15 min",
+ "assignment":"Play one sound you already have. Follow what happens from your hands to your ears—then discover what remains after you stop.",
+ "why":"This is the difference between hearing something, controlling it, recording it, and keeping it. Understanding those differences gives you a place to look when the music disappears.",
+ "setup":"Use the project already open and a safely audible sound. Keep the listening level comfortable. This is an observation assignment: no resets, new routing, cable changes, or overwriting your work. The current Preferences audit remains open.",
+ "steps":[
+  {"title":"Predict","text":"Before touching the keys, say what will make the sound: a sample, an internal instrument, or an external device. Where do you expect to hear it? A guess is fine—label it a guess."},
+  {"title":"Play and notice","text":"Play a short gesture of your own, without pressing Record. Try it softly and then more firmly. Notice the sound, the selected track, and a meter. Which parts of your prediction can you now support?"},
+  {"title":"Let go","text":"Stop playing. Listen for the ending. Does it stop, decay, or continue? Describe the behavior before trying to explain it. Do not change anything just to get an expected answer."},
+  {"title":"Investigate what is kept","text":"Inspect an existing recorded part, when available. Look for note events or an audio region. Playback might be an instrument following stored notes, rather than a recording of its sound. With no existing recording, mark this observation untested—do not create one before the agreed setup audit."},
+  {"title":"Make the idea portable","text":"Explain your sound path without these notes. Choose another already-working sound and repeat. Keep the explanation to one sentence per sound, then play freely for a minute."}
+ ],
+ "listenFor":["What changes with your touch?","What happens after release?","What proves a signal is at one point, but not necessarily at the recording destination?"],
+ "concept":"Control is an instruction: a key, pad, pedal, or stored event tells an instrument what to do. Audio is the resulting sound signal. Storage is where the work is kept. MIDI messages are not the audio waveform. Follow these as separate paths.",
+ "hints":["The physical MAIN button returns to the main working view. Read the selected track and sound name rather than assuming the keys are playing the track you intended.","From Preferences, use Info to read the installed OS version. Do not update as part of this exercise. If an editor's contents are unclear, capture that screen; there is no need to guess the route."],
+ "check":["I can name the source, controller, and listening destination for one sound.","I can distinguish what I observed from what is still unknown.","I can explain why a moving meter alone does not prove that a performance was recorded or saved."],
+ "recovery":"Stop at the first unknown link. Preserve the present setup and note the screen and symptom. Do not disconnect, restart, or discard unsaved work to complete this assignment.",
+ "keep":"One sentence describing the sound path; one thing you heard after release; what was actually captured, or 'not yet tested'. No new MPC file is required.",
+ "next":"L02", "sources":["midi","aum","g2"]
+}

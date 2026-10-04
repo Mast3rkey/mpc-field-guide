@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {escapeHTML, safeURL, sessionBody, issueURL, parseIssue, progressFor, MARKER} from '../assets/core.mjs';
+const repo='Mast3rkey/mpc-field-guide';
+const draft={id:'test-1',date:'2026-10-04',title:'A & B',lesson:'L01',status:'Practiced',result:'I heard a tail.',intention:'Listen'};
+test('HTML is escaped, including quotes',()=>assert.equal(escapeHTML('<img a="x">&'), '&lt;img a=&quot;x&quot;&gt;&amp;'));
+test('unsafe links are rejected',()=>{assert.equal(safeURL('javascript:alert(1)'),'#');assert.equal(safeURL('https://example.com/'),'https://example.com/');});
+test('session body preserves observation and marker',()=>{const b=sessionBody(draft);assert.ok(b.startsWith(MARKER));assert.ok(b.includes('Lesson: L01'));assert.ok(b.includes('I heard a tail.'));});
+test('prefilled issue uses encoded fields',()=>{const u=new URL(issueURL(repo,draft));assert.equal(u.searchParams.get('body'),sessionBody(draft));assert.ok(u.searchParams.get('title').includes('A & B'));});
+test('oversized URL is rejected without data mutation',()=>{const d={...draft,result:'🎹'.repeat(2000)};assert.throws(()=>issueURL(repo,d),/too long/);assert.equal(d.result.length,4000);});
+test('only owner-authored, marked non-PR issues are practice',()=>{const i={number:2,user:{login:'Mast3rkey'},body:sessionBody(draft),title:'Practice',created_at:'2026-10-04T12:00:00Z'};assert.equal(parseIssue(i,'Mast3rkey',repo).status,'Practiced');assert.equal(parseIssue({...i,user:{login:'visitor'}},'Mast3rkey',repo),null);assert.equal(parseIssue({...i,pull_request:{}},'Mast3rkey',repo),null);assert.equal(parseIssue({...i,body:'normal issue'},'Mast3rkey',repo),null);});
+test('reflection cannot inject header state',()=>{const i={number:1,user:{login:'Mast3rkey'},body:sessionBody({...draft,status:'New'})+'\nStatus: Ready to perform'};assert.equal(parseIssue(i,'Mast3rkey',repo).status,'New');});
+test('unrecognized status never becomes mastery',()=>{const i={number:1,user:{login:'Mast3rkey'},body:MARKER+'\nStatus: Mastered\nLesson: L01'};assert.equal(parseIssue(i,'Mast3rkey',repo).status,'New');});
+test('progress needs evidence and follows newest session',()=>{assert.equal(progressFor([],'L01'),'Not assessed');assert.equal(progressFor([{lesson:'L01',status:'Practiced',date:'2026-10-03'},{lesson:'L01',status:'Reliable',date:'2026-10-04'}],'L01'),'Reliable');});

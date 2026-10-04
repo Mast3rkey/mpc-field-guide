@@ -1,0 +1,20 @@
+{
+ "id":"L03", "title":"Change one thing, on purpose", "minutes":"10–15 min",
+ "assignment":"Give one part less weight while leaving its neighbor untouched. Find the control that matches the size of the change you intend.",
+ "why":"You want to shape a sound without accidentally changing the whole setup. The useful skill is choosing the right target and hearing the consequence, not remembering a long path through menus.",
+ "setup":"Use the practice copy from L02. Choose two already-working parts or tracks. Note their starting level values. Stay with level reduction only; avoid gain boosts, effect changes, destructive processing, and shared sample edits.",
+ "steps":[
+  {"title":"Choose the target","text":"Play or audition the two parts. Decide which one you intend to make quieter and which must stay unchanged. Describe the difference you want in your own words."},
+  {"title":"Predict the scope","text":"Find the selected track's mixer level. Before changing it, identify its name and say what else should be affected. A pad level, track level, and main output are different possible scopes—do not treat them as synonyms."},
+  {"title":"Change and compare","text":"Reduce the selected track slightly. Audition both parts again at the same listening volume. Did the intended part change alone? If both changed, return to the recorded value and inspect the selected control instead of compensating elsewhere."},
+  {"title":"Reverse the choice","text":"Restore the starting level, then choose the other part. Repeat the same task without the earlier route in front of you. When it is clear, practice reaching the right control with fewer unnecessary actions."},
+  {"title":"Make a short performance","text":"Use the two parts in a passage of your own. Deliberately shift their balance once, then return to a familiar balance. No particular notes, groove, or style are required."}
+ ],
+ "listenFor":["Did only the intended part change?","Did the difference match your musical intention?","Can you restore the earlier balance without guessing?"],
+ "concept":"A control has both a value and a target. Begin every edit by asking what is selected and where the control sits in the signal path. A clear result is more informative than a fast movement to the wrong object.",
+ "hints":["Use the physical MIXER button, then identify the track name and the displayed mixer level before turning a control. If the view is showing pads or outputs instead, confirm the view; do not infer it from the button alone.","After the normal route is reliable, record the shortest verified route from your starting screen. Which object remains selected when you leave and return is part of that route."],
+ "check":["I can choose and name the target before changing a value.","I can hear and demonstrate that the neighboring part stayed unchanged.","I can restore the original value and repeat with a different target."],
+ "recovery":"Restore the recorded starting value in the same control. If the target is uncertain, stop instead of changing other levels to compensate. Keep the original project preserved.",
+ "keep":"The target, exact screen/control, starting value, observed result, and one route that felt easier. Save only the practice copy when the outcome is useful.",
+ "next":"L04", "sources":["aum"]
+}
